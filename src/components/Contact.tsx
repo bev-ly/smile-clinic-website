@@ -1,7 +1,9 @@
-
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export const Contact = () => {
+  const mapUrl = "https://www.google.com/maps?q=123+Dental+Lane,+Austin,+TX&output=embed";
+  const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=123+Dental+Lane,+Austin,+TX";
+
   return (
     <section id="contact" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -36,11 +38,23 @@ export const Contact = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="space-y-6">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.89758!2d-97.74073!3d30.267153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE2JzAxLjgiTiA5N8KwNDQnMjYuNiJX!5e0!3m2!1sen!2sus!4v1620841111111!5m2!1sen!2sus"
-                  className="w-full h-64 rounded-lg"
-                  loading="lazy"
-                ></iframe>
+                <a 
+                  href={directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative"
+                >
+                  <iframe
+                    src={mapUrl}
+                    className="w-full h-64 rounded-lg"
+                    loading="lazy"
+                  ></iframe>
+                  <div className="absolute inset-0 bg-transparent hover:bg-black/10 transition-colors rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 hover:opacity-100 text-white bg-black/50 px-4 py-2 rounded">
+                      Open in Google Maps
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

@@ -11,17 +11,29 @@ import {
 export const Gallery = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1527576539890-dfa815648363",
-      title: "Modern Facility"
-    },
-    {
       url: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      title: "Treatment Room"
+      title: "Modern Treatment Room"
     },
     {
       url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
       title: "Consultation Area"
     },
+    {
+      url: "https://images.unsplash.com/photo-1527576539890-dfa815648363",
+      title: "Patient Care"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f",
+      title: "Waiting Area"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      title: "Digital Records"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
+      title: "Reception"
+    }
   ];
 
   return (
