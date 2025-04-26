@@ -1,25 +1,25 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tooth, Smile, User, Users } from 'lucide-react';
+import { FileText, SmilePlus, ArrowRight, Heart } from 'lucide-react';
 
 const services = [
   {
-    icon: <Tooth className="w-8 h-8 text-sky-600" />,
+    icon: <FileText className="w-8 h-8 text-sky-600" />,
     title: "General Dentistry",
     description: "Routine check-ups, cleanings, and preventive care."
   },
   {
-    icon: <Smile className="w-8 h-8 text-sky-600" />,
+    icon: <SmilePlus className="w-8 h-8 text-sky-600" />,
     title: "Cosmetic Dentistry",
     description: "Teeth whitening, veneers, and smile makeovers."
   },
   {
-    icon: <User className="w-8 h-8 text-sky-600" />,
+    icon: <ArrowRight className="w-8 h-8 text-sky-600" />,
     title: "Orthodontics",
     description: "Braces, Invisalign, and retainers."
   },
   {
-    icon: <Users className="w-8 h-8 text-sky-600" />,
+    icon: <Heart className="w-8 h-8 text-sky-600" />,
     title: "Pediatric Dentistry",
     description: "Gentle dental care for kids and teens."
   }
@@ -52,4 +52,3 @@ export const Services = () => {
     </section>
   );
 };
-
