@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Phone, Clock } from 'lucide-react';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,12 +26,6 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <h1 className="text-2xl font-bold text-sky-600">BrightSmile</h1>
-            <div className="hidden md:flex items-center space-x-2 text-sm text-gray-600">
-              <Phone size={16} />
-              <span>(512) 555-7890</span>
-              <Clock size={16} className="ml-4" />
-              <span>Mon-Fri: 8AM-6PM</span>
-            </div>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             {['home', 'services', 'about', 'gallery', 'testimonials', 'contact'].map((item) => (
@@ -56,4 +49,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-
